@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
-  <node unique_id="5" master_id="0" name="nmap" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1774672614" ts_lastsave="1774672614"/>
+  <node unique_id="5" master_id="0" name="nmap" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1774672614" ts_lastsave="1774759016">
+    <rich_text>Es una herramienta basica para el escaneo de dispositivos en la red, con este podemos hacer un escaneo general de un sispositivo:
+
+Flags:
+</rich_text>
+    <rich_text family="monospace">-p-</rich_text>
+    <rich_text>: opción que nos permite analizar todos los puertos (65,535).
+
+</rich_text>
+    <rich_text family="monospace">--min-rate=5000</rich_text>
+    <rich_text>: establece la tasa mínima de paquetes que </rich_text>
+    <rich_text family="monospace">nmap</rich_text>
+    <rich_text> enviará por segundo (aumenta la velocidad del escaneo)
+</rich_text>
+    <rich_text family="monospace">-sC</rich_text>
+    <rich_text>: ejecuta los scripts NSE por defecto, útiles para detectar información común (vulnerabilidades simples, banners, etc.)
+</rich_text>
+    <rich_text family="monospace">-sV</rich_text>
+    <rich_text>: realiza detección de versiones de los servicios encontrados (intenta identificar software y versiones para cada puerto abierto).
+
+
+
+
+</rich_text>
+  </node>
 </cherrytree>

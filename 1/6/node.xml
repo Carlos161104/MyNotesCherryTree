@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cherrytree>
-  <node unique_id="6" master_id="0" name="hydra" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1774672621" ts_lastsave="1774672621"/>
+  <node unique_id="6" master_id="0" name="hydra" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1774672621" ts_lastsave="1774759428">
+    <rich_text>Es una herramienta para realizar ataques por fuerza bruta, conayuda de diccionarios contra servicios de red.
+
+Sintaxis: 
+	$ hydra -L </rich_text>
+    <rich_text foreground="#ff7b72">&lt;</rich_text>
+    <rich_text>wordlist_usuarios</rich_text>
+    <rich_text foreground="#ff7b72">&gt;</rich_text>
+    <rich_text> -P </rich_text>
+    <rich_text foreground="#ff7b72">&lt;</rich_text>
+    <rich_text>wordlist_contrasenias</rich_text>
+    <rich_text foreground="#ff7b72">&gt;</rich_text>
+    <rich_text> ssh://</rich_text>
+    <rich_text foreground="#ff7b72">&lt;</rich_text>
+    <rich_text>IP</rich_text>
+    <rich_text foreground="#ff7b72">&gt;</rich_text>
+    <rich_text>
+
+
+Flags:
+</rich_text>
+    <rich_text family="monospace">-L &lt;wordlist_usuarios&gt;</rich_text>
+    <rich_text scale="h3" foreground="#f0f6fc">: indica un archivo con una lista de usuarios (cada usuario en una línea). Hydra probará estos nombres como posibles cuentas.</rich_text>
+    <rich_text>
+</rich_text>
+    <rich_text family="monospace">-P &lt;wordlist_contraseñas&gt;</rich_text>
+    <rich_text scale="h3" foreground="#f0f6fc">: indica un archivo con una lista de contraseñas (cada contraseña en una línea). Hydra combinará estas contraseñas con los usuarios para probar autenticaciones.</rich_text>
+    <rich_text>
+
+Nota: En ambos casos anteriores para intentar con un solo usario o contrasenia colocar la flag en minuscula.
+
+</rich_text>
+  </node>
 </cherrytree>
